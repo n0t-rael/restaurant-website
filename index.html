@@ -1,32 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Restaurant</title>
-<link rel="stylesheet" href="style.css">
+    <title>My Restaurant</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        header {
+            background: url('images/bg.jpg');
+            background-size: cover;
+            color: white;
+            padding: 40px;
+        }
+
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .food-img {
+            width: 200px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        footer {
+            background: #b22222;
+            color: white;
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-<h1>My Restaurant</h1>
-<p>Welcome to our restaurant</p>
-</header>
+    <header>
+        <h1>My Restaurant</h1>
+        <p>Welcome to our restaurant</p>
+    </header>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="menu.html">Menu</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
 
-<section>
-<h2>Delicious Food</h2>
-<p>We serve fresh and tasty food for our customers.</p>
-</section>
+    <section>
+        <h2>Delicious Food</h2>
+        <p>We serve fresh and tasty food for our customers.</p>
 
-<footer>
-<p>© 2026 My Restaurant</p>
-</footer>
+        <!-- Images -->
+        <img src="images/pizza.jpg" class="food-img" alt="Pizza">
+        <img src="images/burger.jpg" class="food-img" alt="Burger">
+        <img src="images/pasta.jpg" class="food-img" alt="Pasta">
+    </section>
+
+    <footer>
+        <p>© 2026 My Restaurant</p>
+    </footer>
 
 </body>
 </html>
