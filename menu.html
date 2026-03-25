@@ -1,32 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Menu</title>
-<link rel="stylesheet" href="style.css">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #fff8dc;
+            text-align: center;
+        }
+
+        h1 {
+            background-color: brown;
+            color: white;
+            padding: 10px;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 15px;
+            width: 220px;
+            background: white;
+            box-shadow: 2px 2px 10px gray;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
 <h1>Our Menu</h1>
-</header>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="menu.html">Menu</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
+<div class="menu">
 
-<section>
-<h2>Food Items</h2>
-<ul>
-<li>Pizza - ₹200</li>
-<li>Burger - ₹120</li>
-<li>Pasta - ₹180</li>
-<li>Cold Drink - ₹60</li>
-</ul>
-</section>
+    <!-- Tomato Soup -->
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Tomato_soup.jpg" alt="Tomato Soup">
+        <h3>Tomato Soup</h3>
+        <p class="price">₹80</p>
+    </div>
+
+    <!-- Paneer -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398" alt="Paneer Butter Masala">
+        <h3>Paneer Butter Masala</h3>
+        <p class="price">₹180</p>
+    </div>
+
+    <!-- Biryani -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b" alt="Veg Biryani">
+        <h3>Veg Biryani</h3>
+        <p class="price">₹150</p>
+    </div>
+
+    <!-- Butter Naan -->
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Butter_Naan.jpg" alt="Butter Naan">
+        <h3>Butter Naan</h3>
+        <p class="price">₹40</p>
+    </div>
+
+    <!-- Juice -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b" alt="Fresh Juice">
+        <h3>Fresh Juice</h3>
+        <p class="price">₹70</p>
+    </div>
+
+    <!-- Ice Cream -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb" alt="Ice Cream">
+        <h3>Ice Cream</h3>
+        <p class="price">₹70</p>
+    </div>
+
+</div>
+
+<br>
+<a href="index.html">Back to Home</a>
 
 </body>
 </html>
