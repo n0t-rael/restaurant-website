@@ -1,97 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home - My Restaurant</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial;
-            text-align: center;
-        }
-
-        header {
-            background: url('images/bg.jpg');
-            background-size: cover;
-            color: white;
-            padding: 60px;
-        }
-
-        nav {
-            background: #333;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            margin: 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 20px;
-        }
-
-        .food-img {
-            width: 250px;
-            border-radius: 10px;
-            margin: 10px;
-        }
-
-        .btn {
-            background: red;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        footer {
-            background: black;
-            color: white;
-            padding: 10px;
-        }
-    </style>
+    <title>Delicious Bites</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Welcome to My Restaurant</h1>
-        <p>Delicious Food | Best Quality | Fast Service</p>
-        <a href="#" class="btn">Order Now</a>
-    </header>
-
-    <!-- Navigation -->
+<header>
+    <h1>🍽 Delicious Bites</h1>
     <nav>
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
+        <a href="portfolio.html">Portfolio</a>
     </nav>
+</header>
 
-    <!-- Home Section -->
-    <section>
-        <h2>Our Special Dishes</h2>
-        <p>Enjoy our tasty and fresh food items</p>
+<section class="hero">
+    <h2>Discover the Best Food</h2>
+    <p>Order | Eat | Enjoy</p>
+</section>
 
-        <img src="images/pizza.jpg" class="food-img" alt="Pizza">
-        <img src="images/burger.jpg" class="food-img" alt="Burger">
-        <img src="images/pasta.jpg" class="food-img" alt="Pasta">
-    </section>
+<section class="cards">
 
-    <!-- About -->
-    <section>
-        <h2>About Us</h2>
-        <p>We provide the best quality food with fresh ingredients.</p>
-    </section>
+    <div class="card">
+        <img src="images/pizza.jpg">
+        <h3>Pizza</h3>
+        <p>Cheesy & delicious</p>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 My Restaurant</p>
-    </footer>
+        <!-- Rating -->
+        <div class="stars">★★★★★</div>
+
+        <!-- Button -->
+        <button>Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="images/burger.jpg">
+        <h3>Burger</h3>
+        <p>Juicy & tasty</p>
+
+        <div class="stars">★★★★☆</div>
+
+        <button>Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="images/noodles.jpg">
+        <h3>Noodles</h3>
+        <p>Hot & spicy</p>
+
+        <div class="stars">★★★★★</div>
+
+        <button>Order Now</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 Delicious Bites</p>
+</footer>
 
 </body>
 </html>
